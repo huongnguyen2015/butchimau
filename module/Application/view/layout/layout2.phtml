@@ -1,0 +1,53 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <?php require_once('header.phtml');?>
+    <body>
+    <div id="wrapper">
+	<div id="container">
+    	<div id="header">
+        	<a href="#" class="logo"><img src="images/logo.png" width="190" /></a>
+        </div><!--end header-->
+        
+        <div id="content">
+        	<ul class="nav">        	<li><a href="index.php"><img src="images/img_trangchu.png"/></a></li>            <li><a href="gioithieu.php"><img src="images/img_gioithieu.png" /></a></li>            <li><a href="huongdan.php"><img src="images/img_huongdan.png" /></a></li>            <li><a href="gopy.php"><img src="images/img_gopy.png" /></a></li>            <li><a href="phuhuynh.php"><img src="images/img_phuhuynh.png" /></a></li>            <li><a href="lienhe.php"><img src="images/img_lienhe.png" /></a></li>        </ul><!--end nav-->
+            <div class="sidebar">
+            	<section class="main clearfix">
+                    <div class="transform">
+                        <select id="cd-dropdown" name="cd-dropdown">
+                            <option value="-1" id="icon-lop1">Lớp 1</option>
+                            <option value="2" id="icon-lop2">Lớp 2</option>
+                            <option value="3" id="icon-lop3">Lớp 3</option>
+                            <option value="4" id="icon-lop4">Lớp 4</option>
+                            <option value="5" id="icon-lop5">Lớp 5</option>
+							<option value="6" id="icon-lop5">Mẫu giáo</option>
+                        </select>
+                        <ul class="menu" id="lop1">		<li id="mon_1"><a href="toan.php">Toán</a></li>		<li id="mon_2" class="active"><a href="index.php">Tiếng việt</a></li>		<li id="mon_3"><a href="mythuat.php">Mỹ thuật</a></li>		<li id="mon_4"><a href="amnhac.php">Âm nhạc</a></li>		<li id="mon_5"><a href="khoahoc.php">Khoa học</a></li>		<li id="mon_6"><a href="kynang.php">Kỹ năng</a></li>		<li id="mon_7"><a href="tuduy.php">Tư duy</a></li>		<li id="mon_8"><a href="thuvien.php">Thư viện</a></li>	</ul>                    </div>
+                </section>
+            </div><!--end sidebar-->
+            <div class="right-content">
+            <div class="sitemap">
+            	<a href="index.php" class="icon-home">Trang chủ</a><span>>></span><a href="#">Lớp 1</a><span>>></span><a href="#" class="active">Tiếng Việt</a>
+            </div>
+            	<div class="item">
+                	<a href="bangchucai.php" class="image"><img src="images/img_1.png"></a>
+                    <a href="bangchucai.php" class="img_text"><img src="images/bangchucai.png"></a>
+                </div><!--end item-->
+                <div class="item">
+                	<a href="#" class="image"><img src="images/img_2.png"></a>
+                    <a href="#" class="img_text"><img src="images/hocvan.png"></a>
+                </div><!--end item-->
+                <div class="item">
+                	<a href="#" class="image"><img src="images/img_5.png"></a>
+                    <a href="#" class="img_text"><img src="images/tapdoc.png"></a>
+                </div><!--end item-->
+                <div class="item">
+                	<a href="#" class="image"><img src="images/img_3.png"></a>
+                    <a href="#" class="img_text"><img src="images/tapviet.png"></a>
+                </div><!--end item-->
+            </div><!--end right-content-->
+        </div><!--end content-->
+    </div><!--end container-->   
+	<?php require_once('footer.phtml');   ?>
+    </body>
+</html>
